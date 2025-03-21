@@ -12,9 +12,84 @@
     font-weight: 700;
 }
 /* colors  */
-Bright orange: hsl(31, 77%, 52%)
+/* Bright orange: hsl(31, 77%, 52%)
 Dark cyan: hsl(184, 100%, 22%)
 Very dark cyan: hsl(179, 100%, 13%)
 
 Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
-Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+/* css global  */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.938rem;
+    font-family: "Lexend Deca";
+    background-color: hsl(0, 0%, 95%);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75)
+}
+
+
+.cta {
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 35px 15px 35px;
+    color: hsl(31, 77%, 52%);
+    text-decoration: none;
+}
+
+.cta--secondary {
+    color: hsl(184, 100%, 22%);
+}
+
+.cta--tertiary {
+    color: hsl(179, 100%, 13%);
+}
+/* css card  */
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card    {
+    width: 400px;
+    height: 600px;
+    background-color: hsl(31, 77%, 52%);
+}
+.card:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+.card:nth-of-type(3) {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.icon-container {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-image: url(../images/icon-sedans.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-content {
+    line-height: 2rem;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
