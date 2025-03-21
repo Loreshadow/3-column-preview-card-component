@@ -85,21 +85,17 @@ p {
     background-color: hsl(179, 100%, 13%);
 }
 
-.icon-container {
-    width: 25%;
-    height: 10%;
-    margin-top: 10%;
-    margin-left: 10%;
-    background-image: url(../images/icon-sedans.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+ .icon-container {
+    width: 50%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 50px;
 }
-.card-container > .card:nth-child(2) > .icon-container {
-    background-image: url(../images/icon-suvs.svg);
+.icon-container > img {
+    width: 50%;
+    height: auto;
 }
-.card-container > .card:nth-child(3) > .icon-container {
-    background-image: url(../images/icon-luxury.svg);
-}
+
 
 .card-content {
     line-height: 2rem;
