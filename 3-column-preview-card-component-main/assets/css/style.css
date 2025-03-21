@@ -113,12 +113,20 @@ p {
     left: 10%;
     bottom: 12.5%;
 }
-
+/* laptop L 1440px responsive  */
+@media screen and (max-width: 1440px) {
+    .card-container {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .card {
+        width: 100%;
+    }
+   }
 /* laptop 1024px responsive  */
 @media screen and (max-width: 1024px) {
     .card {
         width: 70%;
-        height: 500px;  
     }
    }
 /* tablet responsive  */
