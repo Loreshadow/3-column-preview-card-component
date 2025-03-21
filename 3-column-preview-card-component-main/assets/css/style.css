@@ -125,8 +125,12 @@ p {
    }
 /* laptop 1024px responsive  */
 @media screen and (max-width: 1024px) {
+    .card-container {
+        width: 90%;
+        margin-left: 5%;
+    }
     .card {
-        width: 70%;
+        width: 100%;
     }
    }
 /* tablet responsive  */
