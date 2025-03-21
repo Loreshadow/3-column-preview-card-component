@@ -68,7 +68,9 @@ p {
 .card    {
     width: 400px;
     height: 600px;
+    border-radius: 10px;
     background-color: hsl(31, 77%, 52%);
+    position: relative;
 }
 .card:nth-of-type(2) {
     background-color: hsl(184, 100%, 22%);
@@ -78,13 +80,19 @@ p {
 }
 
 .icon-container {
-    width: 100px;
-    height: 100px;
+    width: 25%;
+    height: 10%;
     margin-top: 40px;
     margin-left: 40px;
     background-image: url(../images/icon-sedans.svg);
     background-size: contain;
     background-repeat: no-repeat;
+}
+.card-container > .card:nth-child(2) > .icon-container {
+    background-image: url(../images/icon-suvs.svg);
+}
+.card-container > .card:nth-child(3) > .icon-container {
+    background-image: url(../images/icon-luxury.svg);
 }
 
 .card-content {
@@ -92,4 +100,10 @@ p {
     margin-top: 0;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.cta--primary, .cta--secondary, .cta--tertiary {
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
 }
