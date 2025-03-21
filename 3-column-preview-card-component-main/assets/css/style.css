@@ -48,6 +48,12 @@ p {
     padding: 15px 35px 15px 35px;
     color: hsl(31, 77%, 52%);
     text-decoration: none;
+    transition: all 0.15s ease-in;
+}
+.cta:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
 }
 
 .cta--secondary {
@@ -66,7 +72,7 @@ p {
 }
 
 .card    {
-    width: 400px;
+    width: 20%;
     height: 600px;
     border-radius: 10px;
     background-color: hsl(31, 77%, 52%);
@@ -82,8 +88,8 @@ p {
 .icon-container {
     width: 25%;
     height: 10%;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 10%;
+    margin-left: 10%;
     background-image: url(../images/icon-sedans.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -104,6 +110,36 @@ p {
 
 .cta--primary, .cta--secondary, .cta--tertiary {
     position: absolute;
-    left: 5%;
-    bottom: 15%;
+    left: 10%;
+    bottom: 12.5%;
 }
+
+/* laptop 1024px responsive  */
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 70%;
+        height: 500px;  
+    }
+   }
+/* tablet responsive  */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 25px 0 25px 0;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+    .card {
+        width: 70%;
+        height: 500px;  
+    }
+   }
+
+   /* phone responsive  */
+
+   @media screen and (max-width: 375px) {
+    .card {
+        width: 90%;
+        height: 500px;  
+    }
+   }
